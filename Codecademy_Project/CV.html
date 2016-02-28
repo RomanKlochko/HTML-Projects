@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RK</title>
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+		<script src="jquery-1.11.3.js"></script>
+		</head>
+	<body>
+		<div id="header">
+			<div id="bname"><p id="name"><b>Klochko Roman</b></p></div>
+		</div>
+		<div class="left">
+		<img class="img" src="http://i.work.ua/sent_photo/7/7/3/7738ddcf099eabc4bf66d4c5786dfc75.jpg"/>
+		<a href="https://ua.linkedin.com/in/romanklochko"><img class="img1" src="image/inred.png"/></a>
+		</div>
+		<div class="right">
+			<h4>Objective</h4>
+			<p>To take a position as a QA engineer.</p>
+			<h4>Experience</h4>
+			<p>QA Engineer, JSC Farmak (2014 - Present)</p>
+			<ul>
+				<li>Manual Web software testing</li>
+				<li>Manual Desktop software testing</li>
+				<li>Issues analysis, investigation</li>
+				<li>Bug tracking, Bug report creation</li>
+				<li>Test cases creation, execution, tracking</li>
+				<li>Test documentation creation (Checklist, Traceability Matrix)</li>
+				<li>Analysis and review requirements</li>
+			</ul>
+			<a href="Experience.html"><h4>More About Experience</h4></a>
+			<h4>Skills</h4>
+			<p>Platform: Win, Unix, Android</p>
+			<p>RDBMS: MySQL, Microsoft SQL Server</p>
+			<p>Languages: HTML/CSS, Python</p>
+			<p>Tools: JIRA 5\6, Confluence, JMeter, Lotus Notes, Git, VMware, Genymotion, MS Office 2003\2010</p>
+			<h4>Education</h4>
+			<p>2014-2015</p>
+			<ul>
+				<li>National Aviation University of Ukraine, QA Light Level up extension courses, QA Engineer</li>
+			</ul>
+			<a href="Education.html"><h4>More about Education</h4></a>
+		</div>
+		<div id="footer">
+			<p>Ukraine, Kiev | Tel: +38 (063) 361-5563</p>
+		</div>
+		<h1 id="title" onclick="sayGoodbye();"> Hello </h1>
+		<!--
+ 		this element will display
+ 		the variable. It is empty as
+		it will be filled from javascript.
+	-->
+	<!--<h1 id="number"> </h1>
+	<h2 id="new"> hello </h2>-->
+	
+<script type="text/javascript">	
+	// this is a variable	
+	var counter = 0;	
+	// display the variable in the 	
+	// element "number"	
+	$("#number").text(counter);
+</script>
+		</body>
+		<script type="text/javascript">
+		function sayGoodbye(){
+			console.log("goodbye");
+			$("#title").html("Goodbye");
+			$("#title").click(function () {
+				$("#title").html("Hello");
+				$("#title").off("click");
+			});
+		};
+</script>
+</html>
